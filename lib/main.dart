@@ -1,6 +1,6 @@
+import 'package:application_1/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:application_1/page/todo_page.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,6 +28,6 @@ class MyApp extends StatelessWidget {
         elevation: 0,
       ),
     ),
-    home: const TodoPage(),
+    home: const HomePage(),
   );
 }
