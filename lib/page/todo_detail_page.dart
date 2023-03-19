@@ -48,7 +48,7 @@ class _TodoDetailPageState extends State<TodoDetailPage> {
           Text(
             todo.title,
             style: const TextStyle(
-              color: Colors.black,
+              color: Colors.white70,
               fontSize: 22,
               fontWeight: FontWeight.bold,
             ),
@@ -56,12 +56,12 @@ class _TodoDetailPageState extends State<TodoDetailPage> {
           const SizedBox(height: 8),
           Text(
             DateFormat.yMMMd().format(todo.createdTime),
-            style: const TextStyle(color: Colors.black, fontSize: 12),
+            style: const TextStyle(color: Colors.white54, fontSize: 12),
           ),
           const SizedBox(height: 8),
           Text(
             todo.description,
-            style: const TextStyle(color: Colors.black, fontSize: 18),
+            style: const TextStyle(color: Colors.white70, fontSize: 18),
           )
         ],
       ),

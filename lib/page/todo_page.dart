@@ -1,3 +1,4 @@
+import 'package:application_1/homepage.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:application_1/db/todo_database.dart';
@@ -41,16 +42,16 @@ class _TodoPageState extends State<TodoPage> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(
-      title: const Text(
-        'Notes',
-        style: TextStyle(
-            fontSize: 24,
-            color: Colors.black54,
-            fontWeight: FontWeight.bold
-        ),
-      ),
-    ),
+    // appBar: AppBar(
+    //   title: const Text(
+    //     'Notes',
+    //     style: TextStyle(
+    //         fontSize: 24,
+    //         color: Colors.black54,
+    //         fontWeight: FontWeight.bold
+    //     ),
+    //   ),
+    // ),
     body: Center(
       child: isLoading
           ? const CircularProgressIndicator()
@@ -62,8 +63,8 @@ class _TodoPageState extends State<TodoPage> {
           : buildTodo(),
     ),
     floatingActionButton: FloatingActionButton(
-      backgroundColor: Colors.black,
-      child: const Icon(Icons.add),
+      backgroundColor: Colors.blueGrey,
+      child: const Icon(Icons.edit_note_sharp, ),
       onPressed: () async {
         await Navigator.of(context).push(
           MaterialPageRoute(builder: (context) => const AddEditTodoPage()),
